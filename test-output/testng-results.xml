@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-18T18:06:35 IST" name="Default suite" finished-at="2021-11-18T18:20:18 IST" duration-ms="823080">
+    <groups>
+    </groups>
+    <test started-at="2021-11-18T18:06:35 IST" name="Default test" finished-at="2021-11-18T18:20:18 IST" duration-ms="823080">
+      <class name="Casecreation.RMS.ProviderRequestExceldata">
+        <test-method is-config="true" signature="browser()[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:06:35 IST" name="browser" finished-at="2021-11-18T18:06:36 IST" duration-ms="1276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:06:37 IST" name="login" data-provider="RMSAccess" finished-at="2021-11-18T18:07:11 IST" duration-ms="34257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://rmstest.ehealthcorp.net:8020]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zarif.mohd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kick4Thy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:07:11 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:08:51 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="100457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chiranjivi, Konidela]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Records Template]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:08:51 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:10:32 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="100113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhinav, Kundra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Images template]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:10:32 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:11:57 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="85689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chiranjivi, Konidela]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pathology template]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:11:57 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:13:44 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="106771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhinav, Kundra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Records Template]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pathology template]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:13:44 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:15:16 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="92272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chiranjivi, Konidela]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Images template]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pathology template]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:15:16 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:16:57 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="100865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhinav, Kundra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Records Template]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Images template]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:16:57 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:18:30 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="93231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chiranjivi, Konidela]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pathology template]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method signature="ProviderRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:18:30 IST" name="ProviderRequest" data-provider="ExcelData" finished-at="2021-11-18T18:20:13 IST" depends-on-methods="Casecreation.RMS.ProviderRequestExceldata.login" duration-ms="103123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bronx New Dep B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11/22/2021]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhinav, Kundra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Records]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[360 TRUCKING LLC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Illinois]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Chicago Ridge]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Records Template]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Images template]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Pathology template]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProviderRequest -->
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:Casecreation.RMS.ProviderRequestExceldata@59505b48]" started-at="2021-11-18T18:20:13 IST" name="browserclose" finished-at="2021-11-18T18:20:18 IST" duration-ms="4363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserclose -->
+      </class> <!-- Casecreation.RMS.ProviderRequestExceldata -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -7,7 +7,7 @@ public class ProviderRequestExcelDataProvider {
 	
 	@DataProvider(name="ExcelData")
 	public  Object[][] getdata() throws Exception {
-		String excelpath="C:\\Users\\nagababu.parepalli\\eclipse-workspace\\RmsCustomerPortal\\src\\main\\java\\resources\\RMSAllEnvTestData.xlsx";
+		String excelpath="C:\\Users\\nagababu.parepalli\\eclipse-workspace\\RMS\\src\\main\\java\\resources\\RMSAllEnvTestData.xlsx";
 		String sheetName="provider";
 	Object data[][]=testData(excelpath,sheetName);
 	return data;
@@ -15,7 +15,7 @@ public class ProviderRequestExcelDataProvider {
 	
 	@DataProvider(name="RMSAccess")
 	public  Object[][] getuserdata() throws Exception {
-		String excelpath="C:\\Users\\nagababu.parepalli\\eclipse-workspace\\RmsCustomerPortal\\src\\main\\java\\resources\\RMSAllEnvTestData.xlsx";
+		String excelpath="C:\\Users\\nagababu.parepalli\\eclipse-workspace\\RMS\\src\\main\\java\\resources\\RMSAllEnvTestData.xlsx";
 		String sheetName="Access";
 	Object data[][]=testData(excelpath,sheetName);
 	return data;

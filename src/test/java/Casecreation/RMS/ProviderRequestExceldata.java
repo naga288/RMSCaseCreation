@@ -13,7 +13,7 @@ import resources.ProviderRequestExcelDataProvider;
 import resources.driverClass;
 
 
-public class singleProviderRequestExceldata extends driverClass {
+public class ProviderRequestExceldata extends driverClass {
 	public static WebDriver driver;
 	RMS_request_methods2 request = new RMS_request_methods2();
 	ProviderRequestMethods2 Provider_request = new ProviderRequestMethods2();
@@ -34,16 +34,16 @@ public class singleProviderRequestExceldata extends driverClass {
 	}
 
 	@Test(dataProvider = "ExcelData", dataProviderClass = ProviderRequestExcelDataProvider.class, dependsOnMethods = { "login" })
-	public void ProviderRequest(String NeedByDate, String AuthorizingPhysician,
+	public void ProviderRequest(String dept, String NeedByDate, String AuthorizingPhysician,
 			String IndexRequest, String filetype,String facilityName,String provider_state, String Provider_city, String rec_template,String img_template, String path_template) throws InterruptedException, IOException {
-		request.patientdemographics(driver);
+		request.patientdemographics(driver,  dept);
 		request.chooseRetrievalOptions(driver, NeedByDate, AuthorizingPhysician);
 		if(IndexRequest.equalsIgnoreCase("Yes")) {
 			request.uploadfiles(driver, filetype);
 		}else {
 		request.uploadfilesNext(driver);}
 		
-		Provider_request.singleLocationProvider(driver, facilityName, provider_state, Provider_city, rec_template, img_template, path_template);
+		Provider_request.providerLocations(driver, facilityName, provider_state, Provider_city, rec_template, img_template, path_template);
 		request.searchCreatedRequest(driver);
 
 	}

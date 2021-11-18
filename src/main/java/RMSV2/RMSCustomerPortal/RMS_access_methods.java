@@ -9,6 +9,7 @@ import org.testng.Assert;
 import pageObjects.homePage;
 import pageObjects.loginPage;
 import resources.driverClass;
+import resources.waits;
 
 public class RMS_access_methods extends driverClass{
 	
@@ -17,6 +18,7 @@ public class RMS_access_methods extends driverClass{
 
 	public static homePage h_page;
 	public static loginPage log_in;
+	public static waits wait;
 	public void login(WebDriver driver, String Env,String UserName,String Password) throws IOException, InterruptedException {
 		 log_in = new loginPage(driver);
 		 h_page=new homePage(driver);
@@ -34,7 +36,7 @@ driver.get(Env);
 
 					break login;
 				} else {
-					//waits.WaitForElement(driver, log_in.loginScreen());			
+					// wait.WaitForElement(driver, log_in.loginScreen());			
 					Thread.sleep(1000);
 					}
 			}

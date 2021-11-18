@@ -13,7 +13,7 @@ public class providersPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(css = "input[value='Recent Providers List']")
+	@FindBy(xpath = "//input[@value='Recent Providers List']")
 	WebElement RecentProviders;
 
 	@FindBy(xpath = "//button[contains(@class,'k-switch-off')]")
@@ -33,7 +33,7 @@ public class providersPage {
 	
 	@FindBy(xpath="//div[contains(@id,'RecentProvidersList')]//tbody/tr[contains(@id,'RecentProvidersList')]") WebElement RecentProvidersList;
 	@FindBy(xpath="//div[contains(@id,'RecentProvidersList')]//tbody/tr[contains(@id,'RecentProvidersList')]/td/a") List<WebElement> RecentProvidersName;
-	@FindBy(css="a[class=rwCloseButton]") WebElement close;
+	@FindBy(xpath="//a[@class=rwCloseButton]") WebElement close;
 	
 	@FindBy(xpath="//input[@name='providerName']") WebElement ProviderNameField;
 	@FindBy(xpath="//input[@name='city']") WebElement city;	

@@ -17,7 +17,7 @@ public class patientProfilePage {
 	@FindBy(id="MainContent_cphAuth_btnPatientNext") WebElement checkextPatient;
 	@FindBy(xpath="//div/h3[contains(text(),'Patient Reconciliation')]") WebElement PatientReconciliation;
 	@FindBy(xpath="//a[contains(@id, 'PatientReconciliation1_btnCreate')]") WebElement createpatient;
-	@FindBy(css="div[class='topblue']") WebElement newpatient;
+	@FindBy(xpath="//div[@class='topblue']") WebElement newpatient;
 	
 	@FindBy(xpath="//input[contains(@id,'SSN')]") WebElement SSN;
 	@FindBy(xpath="//input[contains(@id,'rdpDOB_dateInput')]") WebElement DOB;
@@ -27,7 +27,7 @@ public class patientProfilePage {
 	@FindBy(xpath="//input[contains(@id,'txtPostal')]") WebElement postalcode;
 	@FindBy(xpath="//input[contains(@id,'txtPhone')]") WebElement phonenumber;
 	@FindBy(xpath="//select[contains(@id,'ddlDepartment')]") WebElement department;
-	@FindBy(css="button[value='Next']") WebElement next;
+	@FindBy(xpath="//button[@value='Next']") WebElement next;
 	@FindBy(xpath="//div[contains(@id,'Panel1')]//span[@style='display: inline;']") List<WebElement> errors;
 	@FindBy(id="retrievalOptions") WebElement retrievalOptionsScreen;
 	public patientProfilePage(WebDriver driver) {

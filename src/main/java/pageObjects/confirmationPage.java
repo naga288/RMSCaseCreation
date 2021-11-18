@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class confirmationPage {
-	@FindBy(className = "footer")
+	@FindBy(xpath="//a[@className ='footer']")
 	WebElement Footer;
 	@FindBy(linkText = "Done")
 	WebElement Done;

@@ -19,7 +19,7 @@ public class ProviderRequestMethods2 {
 	public static templatePage temp_page;
 	public static homePage home_page;
 	
-	public void singleLocationProvider(WebDriver driver, String facilityName, String state, String city, String rec_template, String img_template,String  path_template)
+	public void providerLocations(WebDriver driver, String facilityName, String state, String city, String rec_template, String img_template,String  path_template)
 			throws InterruptedException {
 		temp_page=new templatePage(driver);
 		preview_page = new previewPage(driver);
@@ -41,34 +41,13 @@ public class ProviderRequestMethods2 {
 				for(WebElement option:providers_list) {
 					if(option.getText().equalsIgnoreCase(facilityName)) {
 						option.click();
-						templateloop:while(true) {
-							if(provider_page.ManageTemplates().isDisplayed()) {
-				//				System.out.println("Template page is displayed");
-								if(rec_template!=null && img_template.isEmpty() && path_template.isEmpty() ) {
-					//				System.out.println("Record template");
-									recordtemplate(driver, rec_template);
-								}else if(rec_template.isEmpty() && img_template!=null && path_template.isEmpty()){
-						//			System.out.println("image template");
-									imagetemplate(driver,img_template);
-								}else if(rec_template.isEmpty() && img_template.isEmpty() && path_template!=null) {
-							//		System.out.println("path template");
-									pathologytemplate(driver,path_template);
-									
-								}else if(rec_template!=null && img_template!=null && path_template!=null) {
-								//	System.out.println("All templates");
-									recordtemplate(driver, rec_template);
-									imagetemplate(driver,img_template);
-									pathologytemplate(driver,path_template);	
-									
-								}else {
-									System.out.println("Issue with data");
-								}
-								break templateloop;
-							}else {
-								Thread.sleep(1000);
-							}
-					}	
-					 break	facilityloop;	
+						try {
+							template_selection( driver,  rec_template,  img_template,  path_template);
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+											 break	facilityloop;	
 			}
 
 			}
@@ -142,7 +121,7 @@ public class ProviderRequestMethods2 {
 	
 	public void imagetemplate(WebDriver driver, String img_template) throws InterruptedException {
 		
-		System.out.println("Image template method");
+		//System.out.println("Image template method");
     JavascriptExecutor js = (JavascriptExecutor) driver;
     WebElement Element = temp_page.ApplyImagesTemlate();
     js.executeScript("arguments[0].scrollIntoView();", Element);
@@ -151,7 +130,7 @@ public class ProviderRequestMethods2 {
 	temp_page.ApplyImagesTemlate().click();
 	templateload:while(true) {
 		if(temp_page.getImageItems().size()>0) {
-			System.out.println("image template items loaded");
+			//System.out.println("image template items loaded");
 
 			break templateload;
 		}else {
@@ -182,6 +161,52 @@ public class ProviderRequestMethods2 {
 	
 
 	
+	}
+	
+	public void template_selection(WebDriver driver, String rec_template, String img_template,String  path_template) throws Exception {
+		templateloop:while(true) {
+			if(provider_page.ManageTemplates().isDisplayed()) {
+//				System.out.println("Template page is displayed");
+
+				 if(rec_template!=null && img_template.isEmpty() && path_template.isEmpty() ) {
+	//				System.out.println("Record template");
+					recordtemplate(driver, rec_template);
+				}else if(rec_template.isEmpty() && img_template!=null && path_template.isEmpty()){
+		//			System.out.println("image template");
+					imagetemplate(driver,img_template);
+				}else if(rec_template.isEmpty() && img_template.isEmpty() && path_template!=null) {
+			//		System.out.println("path template");
+					pathologytemplate(driver,path_template);
+					
+				}else if(rec_template!=null && img_template!=null && path_template.isEmpty()) {
+					recordtemplate(driver, rec_template);
+					imagetemplate(driver,img_template);
+
+				}else if(rec_template.isEmpty() && img_template!=null && path_template!=null) {
+					imagetemplate(driver,img_template);
+					pathologytemplate(driver,path_template);	
+					
+
+				}else if(rec_template!=null && img_template.isEmpty() && path_template!=null) {
+					recordtemplate(driver, rec_template);
+					pathologytemplate(driver,path_template);	
+
+				}else if(rec_template!=null && img_template!=null && path_template!=null) {
+					//	System.out.println("All templates");
+					recordtemplate(driver, rec_template);
+					imagetemplate(driver,img_template);
+					pathologytemplate(driver,path_template);	
+					
+				}else {
+				
+					System.out.println("Issue with data");
+				}
+				break templateloop;
+			}else {
+				Thread.sleep(1000);
+			}
+	}	
+
 	}
 
 

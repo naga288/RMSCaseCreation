@@ -30,10 +30,10 @@ public class indexreportrequestExcelData extends driverClass {
 
 	}
 	@Test(dataProvider = "ExcelData", dataProviderClass = IndexRequestExcelDataProvider.class, dependsOnMethods = { "login" })
-	public void IndexOnlyRequest(String firstName, String SSN, String dob, String streetAdd, String city,
+	public void IndexOnlyRequest(String dept,String firstName, String SSN, String dob, String streetAdd, String city,
 			String postalCode, String phnum,String NeedByDate, String RecordsNeededFor, String AuthorizingPhysician,
 			String PurposeOfRequest,String filetype) throws InterruptedException, IOException {
-		request.patientdemographics(driver);
+		request.patientdemographics(driver,dept);
 		request.chooseRetrievalOptions(driver, NeedByDate, RecordsNeededFor);
 		request.uploadfiles(driver, filetype);
 		request.indexOnlyrequest(driver);
